@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yinxi Ding | Personal Portfolio</title>
+    <style>
+        :root {
+            --primary: #cc0033; /* Rutgers Red Accent */
+            --primary-hover: #990022;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #212529;
+            --text-muted: #6c757d;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* 1. Personal Statement Styling */
+        .personal-statement {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #333;
+            background-color: #fff0f3;
+            border-left: 5px solid var(--primary);
+            padding: 18px 24px;
+            margin: 0 auto;
+            max-width: 750px;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 2. Skills Section Styling */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .skill-pill {
+            background-color: #f1f3f5;
+            color: #495057;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* 3. Projects Section Styling */
+        .project-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        }
+
+        .project-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .project-award {
+            display: inline-block;
+            background-color: #e6f4ea;
+            color: #137333;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .project-links a {
+            display: inline-block;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-right: 15px;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            header, section {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header & Section 1: Personal Statement -->
+        <header>
+            <h1>Yinxi (Tina) Ding</h1>
+            <p class="subtitle">Marketing Management Student | Rutgers Business School</p >
+            
+            <div class="personal-statement">
+                <strong>Personal Statement:</strong> Driven Marketing Management student combining creative media production, data-informed strategy, and cross-cultural storytelling to craft impactful visual and digital experiences.
+            </div>
+        </header>
+
+        <!-- Section 2: Skills Showcase -->
+        <section id="skills">
+            <h2>Technical & Professional Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Digital Media & Content</h3>
+                    <ul class="skill-list">
+                        <li class="skill-pill">Video Editing (CapCut)</li>
+                        <li class="skill-pill">Digital Photography</li>
+                        <li class="skill-pill">Voice Dubbing & Audio</li>
+                        <li class="skill-pill">Visual Aesthetics</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Marketing & Strategy</h3>
+                    <ul class="skill-list">
+                        <li class="skill-pill">Content Strategy</li>
+                        <li class="skill-pill">Media Framing Analysis</li>
+                        <li class="skill-pill">Business Planning</li>
+                        <li class="skill-pill">Social Media Campaigns</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical & Software</h3>
+                    <ul class="skill-list">
+                        <li class="skill-pill">HTML & Web Design</li>
+                        <li class="skill-pill">Microsoft Excel</li>
+                        <li class="skill-pill">PowerPoint</li>
+                        <li class="skill-pill">Microsoft Word</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-title">Questify — Youth Educational Game App</div>
+                <span class="project-award">Technovation Girls — Top 8 in Asia (Quarterfinalist)</span>
+                <p class="project-desc">
+                    Co-created an interactive educational app designed for youth sex education in Asia. Developed game scripts, designed background characters, authored the comprehensive business plan, and produced two promotional campaign videos for YouTube.
+                </p >
+                <div class="project-links">
+                    <a href=" " target="_blank" rel="noopener">View Repository</a >
+                    <a href="https://youtube.com" target="_blank" rel="noopener">Watch Promo Video</a >
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-title">Media Framing Analysis: 2020 Tokyo Olympics</div>
+                <span class="project-award">Published Independent Research</span>
+                <p class="project-desc">
+                    Conducted a comparative content analysis on how Chinese and English newspapers framed the economic impact of the 2020 Tokyo Olympics. Applied agenda-setting theory to evaluate narrative differences across global media outlets.
+                </p >
+                <div class="project-links">
+                    <a href="https://github.com" target="_blank" rel="noopener">Read Abstract & Paper</a >
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-title">Guizhou Forest Protection Merchandise & Social Campaign</div>
+                <span class="project-award">Community Impact Initiative</span>
+                <p class="project-desc">
+                    Led a team of 18 in designing, marketing, and managing an online store for community-designed merchandise. Produced promotional video content and successfully raised 4,000 RMB for the Guizhou Forest Protection Agency.
+                </p >
+                <div class="project-links">
+                    <a href="https://github.com" target="_blank" rel="noopener">View Media Portfolio</a >
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Yinxi Ding. Built with HTML & CSS. Hosted on GitHub Pages.</p >
+        </footer>
+    </div>
+
+</body>
+</html>
